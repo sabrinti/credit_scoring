@@ -681,11 +681,8 @@ def plot_feature_importance(df, col_x, col_y, title, x_label, y_label):
                 data=df,
                 width=0.5,                
                showmeans=True,
-               showfliers=False,
-               meanprops={"marker":"o",
-                          "markerfacecolor":"red", 
-                          "markeredgecolor":"red",
-                          "markersize":"3"})
+               showfliers=False)
+               
     plt.ylabel(y_label, size=10)
     plt.xlabel(x_label, size=10)
     plt.title(title, size=10)
