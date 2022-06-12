@@ -799,7 +799,7 @@ st.pyplot(fig)
 data_income = load_income_population(df_int)
 fig, ax = plt.subplots(figsize=(10, 5))
 sns.histplot(data_income["Revenus globaux"], edgecolor = 'k', color="blue", bins=10)
-ax.axvline(int(infos_clients["Revenus globaux"].values[0]), color="black", linestyle='--')
+ax.axvline(infos_clients["Revenus globaux"].values[0], color="black", linestyle='--')
 ax.set(title='Revenus Client', xlabel='Revenue', ylabel='')
 st.pyplot(fig)
         
