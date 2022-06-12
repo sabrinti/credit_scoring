@@ -218,7 +218,7 @@ def client_sim(id_client, feature_important_data, select_chart):
 
 def client_graph_gen(id_client, df_in, var, type_graph):
     with st.container():
-        st.markdown("##### Graphes généraux sur les clients")
+        st.markdown("##### Distributions des clients")
         expl, grid_graph_gen_sim = st.columns((1,10))
         
         with expl:
