@@ -237,7 +237,7 @@ def client_graph_gen(id_client, df_in, var, type_graph):
     
 def client_graph_feat():
     with st.container():
-        st.markdown("##### Graphe global sur l\'importance des variables")
+        st.markdown("##### Meilleures variables globales")
         expl, grid_graph_feat = st.columns((1,10))
         
         with expl:
