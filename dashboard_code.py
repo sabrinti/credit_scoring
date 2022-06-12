@@ -209,7 +209,7 @@ def client_sim(id_client, feature_important_data, select_chart):
                                     height=220, 
                                     width='100%',
                             )
-            if select_chart == "Plot radar":
+            if select_chart == "Radar Chart":
                 radar_chart(voisin)
             
         return "ok"
