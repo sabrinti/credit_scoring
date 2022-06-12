@@ -486,7 +486,7 @@ def client_sim_voisins(feature_imp_data):
                                        columns=df_int.columns)
                                        
     i = 0
-    for id in clients_smilaires.transpose()['SK_ID_CURR']:
+    for id in clients_similaires.transpose()['SK_ID_CURR']:
         voisins_int.iloc[i] = df_int[df_int['Id client'] == id]
         i += 1
            
