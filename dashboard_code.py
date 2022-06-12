@@ -475,7 +475,7 @@ def config_aggrid_2(df_in):
 def client_sim_voisins(feature_imp_data):
     data_nn = data_train_id_target[data_train_id_target['SK_ID_CURR'] == idclient]
     client_list = std.transform(data_nn[feature_imp_data])  # standardisation
-    distance, voisins = nn.kneighbors(client_list)
+    distance, voisins = nearest_n.kneighbors(client_list)
     voisins = voisins[0]  
     
     # Création d'un dataframe avec les voisins
